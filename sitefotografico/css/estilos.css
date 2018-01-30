@@ -1,0 +1,314 @@
+body {
+
+font-family:Salsa, sans-serif;
+color:#4d4d4d;
+}
+
+h1,h2,h3{
+
+    margin:0;
+    font-family:Salsa,Serif; 
+    font-weight: 900;
+    
+}
+
+.centraliza{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;    
+}
+
+.botao {
+   color:darkviolet;
+   text-decoration: none;
+    padding: 10px 20px;
+}
+
+
+nav{
+
+display: flex;
+padding: 30px;
+flex-direction:column;
+align-items:center;
+background-color:#4d4d4d;
+   
+}
+
+
+
+nav > a {
+    
+ text-align: center;   
+text-decoration: none;
+color: #f1f1f1;
+font-weight: 900;
+font-size: 30px;
+font-family:Salsa;
+    
+}
+
+
+
+
+nav ul {
+    
+list-style: none;    
+flex-direction:column;  
+align-items:center;
+width: 100%;    
+}
+
+nav ul li {
+text-align:center;
+width: 80%; /* colocou exatamente embaixo do cabeçalho */
+}
+
+
+nav ul li a{
+
+    
+display: inline-block;
+padding: 15px;
+width: 100%;
+color: aliceblue;
+    
+}
+
+header {
+    
+background-image: url('../portifolio/p5.jpg');
+background-size: cover;
+background-position: center;
+display: flex;
+flex-direction: column;
+
+text-align: center;
+padding-top: 20px;
+padding-bottom: 20px; 
+color: aliceblue;
+}
+
+
+
+#sobre {
+    
+background-color:white;
+}
+
+#sobre p {
+    
+margin-bottom: 2.5em;
+max-width: 1000px;
+} 
+
+
+.botao {
+color:#f1f1f1;
+text-decoration: none;
+padding: 10px 30px;
+background-color: #8f3faf;
+font-size: .9em;  
+border-radius: 3px;    
+}
+
+
+
+#portifolio {
+
+display: flex;
+flex-direction: column;
+padding-top: 20px;
+align-items: center;
+    
+}
+
+#portifolio h2 {
+    
+margin-bottom: 20px;    
+}
+
+#portifolio img {
+
+max-width:100%;
+    height: auto;
+    padding: 0.5px;
+}
+
+#contato {
+    
+padding: 20px;    
+}
+
+.redessociais {
+ 
+height: 100%;  
+display:flex;
+flex-direction:column;
+align-items:center;
+background-color: darkviolet;
+
+    
+}
+
+.redessociais li{
+padding: 3px;    
+    
+}
+
+.redessociais ul {
+
+    list-style-type: none;
+    flex-direction: column;
+    width: 100px;
+}
+
+.redessociais img {
+    border-radius: 20000000px;
+    
+}
+
+
+
+footer {
+    
+    text-align: center;
+    padding: 10px;
+    background-color: #4d4d4d;
+    color:white;
+    
+}
+
+/******************************************************************************************************************************************/
+
+@media screen and (min-width:768px){
+    
+    
+    nav{
+        
+        flex-direction: row;
+        justify-content: space-around;    
+    }
+    
+    nav > a{
+        
+    font-size:70px;    
+    }
+    
+    nav ul {
+        
+        flex-direction: row;
+        width:15%;
+        font-size:20px;
+    }
+    
+    header {
+        
+        height:600px;
+        height: 50vh; /* o quanto a imagem cobre no navegador */
+        justify-content: center;
+    } 
+    
+    header p {
+        
+    font-size:20px;    
+    }
+    
+ 
+    #sobre {
+        
+        height: 250px;
+        height: 30vh;
+        justify-content: center;
+        min-height: 250px;
+    }    
+    
+    #portifolio{
+        
+        flex-direction:row;
+        flex-wrap: wrap;
+        border:1px;
+    }
+    
+    
+    #portifolio h2{
+        
+        width: 100%;
+        text-align: center;
+    }
+    
+
+    #portifolio img {
+        max-width:100%;
+        width: 33%;
+    }
+    
+    
+    #contato {
+        
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        max-width: 500px;
+        margin: 0 auto;
+        font-size:20px;
+    }
+    
+    #contato h2, #contato p{
+        
+        width: 100%;
+        
+    }
+    
+    
+    .redessociais {
+        margin:auto;
+        display:flex;
+        text-align: center;
+        justify-content: center;
+        padding: 1px;
+       margin-top: 3px; /*espaçamento da margem no topo*/
+        
+   
+        
+    }
+    
+    
+    .redessociais ul {
+       padding:1px;
+        margin: 2px;
+        width: 80%;
+        list-style:none; 
+    
+   
+    }
+    
+    
+ 
+    .redessociais ul li {
+       
+      padding:12px 110px;
+        float:left;
+         
+ 
+    }
+ 
+
+
+    
+    
+    
+    
+    
+    
+}
+
+
+
+
+
+
+
+
+
